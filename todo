@@ -1,0 +1,51 @@
+Criar classes:
+
+- Cliente  OK
+- Carrinho  OK
+- Pedido  OK
+- Comanda  OK
+- Item  OK
+- Funcionário  OK
+- Notificação  OK
+
+
+AuthenticationController:
+    Atualmente utiliza classe Pessoa, necessário substituir por equivalente  OK +-
+    SUBSTITUÍDO, MAS NÃO FUNCIONAL
+
+Usuario:
+    Deve ser mudado para generalizar Cliente e Funcionário
+    ? Novas role a ser adicionadas
+
+
+AS CLASSES NOVAS AINDA NÃO FORAM MARCADAS COM
+@Entity
+
+
+
+--------------
+
+
+Caso de uso 'Adiciona item ao carrinho':
+
+* considerando Cliente logado
+
+Ponto de vista do cliente:
+1. Cliente seleciona Item do cardápio
+2. Cliente aperta 'adicionar ao carrinho'
+3. Item é adicionado ao Carrinho do Cliente
+
+Internamente:
+1. 
+* considerando que a IU mostra um Item na tela e conhece seu Id, além do Id do próprio usuário
+2. a. pesquisa Item pelo id (retorna Item item)
+2. b. pesquisa Cliente pelo id (retorna Cliente cliente)
+3. "cliente.adicionaItem(item);"
+
+
+
+----- 
+token login
+{
+    "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6IjQzMjEiLCJleHAiOjE3MTMyNDk5NDd9.kNdoompD08ESG7gJ2EFdBTl2G0qduTVTk55hR9W93HA"
+}
